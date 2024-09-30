@@ -1,0 +1,765 @@
+INSERT INTO Production (Production_ID, Name, PAN_No, Location)
+VALUES
+    (1001, 'HBO', 'ABCDE1234F', 'United States'),
+    (1002, 'Warner Bros. Television', 'FGHIJ5678K', 'United States'),
+    (1003, 'Netflix Studios', 'NETFL1234P', 'California'),
+    (1004, '2D Entertainment', 'ABC1234567', 'Mumbai'),
+    (1005, 'AGS production', 'GHI3456789', 'Bangalore'),
+    (1006, 'Annapurna Stdios', 'JKL4567890', 'Chennai'),
+    (1007, 'Anurag Films', 'MNO5678901', 'Kolkata'),
+    (1008, 'AVM Productions', 'PQR6789012', 'Hyderabad'),
+    (1009, 'Balaji  Pictures', 'STU7890123', 'kochi'),
+    (1010, 'Bhansali films', 'VWX8901234', 'Ahmedabad'),
+    (1011, 'Cape Of  Films', 'YZA9012345', 'Jaipur'),
+    (1012, 'Chilsag Network', 'BCD0123456', 'Lucknow'),
+    (1013, 'Cine Productions', 'EFG1234567', 'Mumbai'),
+    (1014, 'Clean Slate Films', 'HIJ2345678', 'Chennai'),
+    (1015, 'Cloud Nine Movies', 'KLM3456789', 'Kochi'),
+    (1016, 'Colour Productions', 'NOP4567890', 'Hyderabad'),
+    (1017, 'Dev Entertainment', 'QRS5678901', 'Gurgaon'),
+    (1018, 'Devgn Films', 'TUV6789012', 'Bangalore'),
+    (1019, 'Dharma Productions', 'WXY7890123', 'Mumbai'),
+    (1020, 'Drishyam Films', 'ZAB8901234', 'Chennai'),
+    (1021, 'Emmay Entertainment', 'CDE9012345', 'Kochi'),
+    (1022, 'Eros International', 'FGH0123456', 'Hyderabad'),
+    (1023, 'Felis Creations', 'MNO3456789', 'mumbai'),
+    (1024, 'Fridaym House', 'PQR4567890', 'mumbai'),
+    (1025, 'Geetha Arts', 'STU5678901', 'Gurgaon'),
+    (1026, 'Gemini  Circuit', 'VWX6789012', 'Bangalore'),
+    (1027, 'G.Babu Entertainment', 'YZA7890123', 'Mumbai'),
+    (1028, 'Grazing Pictures', 'BCD8901234', 'Chennai'),
+    (1029, 'Hombale Films', 'EFG9012345', 'Kochi'),
+    (1030, 'Illuminati Films', 'HIJ0123456', 'Hyderabad'),
+    (1031, 'Jayanna Combines', 'KLM1234567', 'Mumbai'),
+    (1032, 'Jeetz Filmworks', 'NOP2345678', 'Chennai'),
+    (1033, 'Kanteerava Studios', 'QRS3456789', 'Kolkata'),
+    (1034, 'Kavitha Productions', 'TUV4567890', 'Bangalore'),
+    (1035, 'Kokers Films', 'WXY5678901', 'Hyderabad'),
+    (1036, 'Eskay Movies', 'GHI1234567', 'Mumbai'),
+    (1037, 'Excel Entertainment', 'JKL2345678', 'Chennai'),
+    (1038, 'Netflix Studios', 'XYZ9876543', 'Mumbai'),
+    (1039, 'Amazon Prime Studios', 'DEF4567890', 'Delhi'),
+    (1040, 'Sony Pictures India', 'GHI3456782', 'Mumbai'),
+    (1041, 'Excel Entertainment', 'JKL2345673', 'Mumbai');
+
+	 
+
+INSERT INTO Content (Content_ID, Title, Content_Type, Release_Date, Age_rating, IMDB_rating, Production_ID)
+VALUES
+    (101, 'Game of Thrones', 'Premium', '2011-04-17', 'A', 9.3, 1001),
+    (102, 'Stranger Things', 'Premium', '2016-07-15', 'UA', 8.7, 1003),
+    (103, 'Lagaan', 'Premium', '2001-06-15', 'U', 8.1, 1004),
+    (104, 'Dangal', 'Premium', '2016-12-23', 'U', 8.4, 1036),
+    (105, 'Comicstaan 3', 'Free', '2021-08-06', 'UA', 7.4, 1008),
+    (106, '3 Idiots', 'Premium', '2009-12-25', 'U', 8.4, 1015),
+    (107, 'Taare Zameen Par', 'Premium', '2007-12-21', 'U', 8.4, 1026),
+    (108, 'Chak De! India', 'Premium', '2007-08-10', 'U', 8.2, 1027),
+    (109, 'Gully Boy', 'Premium', '2019-02-14', 'UA', 8.2, 1011),
+    (110, 'Andhadhun', 'Premium', '2018-10-05', 'UA', 8.3, 1026),
+    (111, 'Queen', 'Premium', '2013-03-07', 'UA', 8.2, 1005),
+    (112, 'Miracle No. 7', 'Premium', '2019-12-13', 'U', 8.1, 1004),
+    (113, 'Paan Singh Tomar', 'Premium', '2012-03-02', 'UA', 8.2, 1006),
+    (114, 'PK', 'Premium', '2014-12-19', 'UA', 8.1, 1011),
+    (115, 'Drishyam', 'Premium', '2015-07-31', 'UA', 8.2, 1019),
+    (116, 'Gangs of Wasseypur', 'Premium', '2012-06-22', 'UA', 8.2, 1013),
+    (117, 'Bajrangi Bhaijaan', 'Premium', '2015-07-17', 'U', 8.0, 1033),
+    (118, 'The White Tiger', 'Premium', '2021-01-22', 'UA', 7.1, 1017),
+    (119, 'Kapil Sharma Show', 'Free', '2016-04-23', 'UA', 8.2, 1033),
+    (120, 'Comedy High School', 'Free', '2018-02-17', 'UA', 6.5, 1008),
+    (121, 'Article 15', 'Premium', '2019-06-28', 'UA', 8.2, 1018),
+    (122, 'Tumbbad', 'Premium', '2018-10-12', 'UA', 8.3, 1005),
+    (123, 'Comedy Circus', 'Free', '2007-06-16', 'UA', 7.3,1033),
+    (124, 'Delhi Belly', 'Premium', '2011-07-01', 'UA', 7.6, 1010),
+    (125, 'Ghoul', 'Premium', '2018-08-24', 'UA', 7.1, 1005),
+    (126, 'Shershaah', 'Premium', '2021-08-12', 'UA', 8.9, 1015),
+    (127, 'The Comedy Club', 'Free', '2019-11-01', 'UA', 7.0, 1008),
+    (128, 'Article 370', 'Premium', '2019-12-13', 'UA', 7.3, 1031),
+    (129, 'Shershaah 2', 'Premium', '2024-05-1', 'UA', 8.9, 1015),
+    (130, 'Mukkabaaz', 'Premium', '2018-01-12', 'UA', 8.0, 1027),
+    (131, 'Sonchiriya', 'Premium', '2024-05-10', 'UA', 7.5, 1033),
+    (132, 'Comicstaan', 'Free', '2018-07-13', 'UA', 7.8, 1008),
+    (133, 'Comicstaan 2', 'Free', '2019-07-12', 'UA', 7.6, 1008),
+    (134, 'Kenny Sebastian', 'Free', '2017-12-14', 'UA', 8.1, 1008),
+    (135, 'Comic bassi', 'Free', '2020-05-01', 'UA', 7.2, 1033),
+    (136, 'Kanan Gill', 'Free', '2017-05-22', 'UA', 8.0, 1008),
+    (137, 'Drishyam 2.0', 'Premium', '2024-06-1', 'UA', 8.2, 1019),
+    (138, 'Mukkabaaz 3.0', 'Premium', '2024-05-30', 'UA', 8.0, 1027),
+    (139, 'Sacred Games', 'Premium', '2018-07-06', 'A',NULL , 1038),
+    (140, 'Family Man', 'Premium', '2019-09-20', 'UA',NULL , 1039),
+    (141, 'Scam 1992', 'Premium', '2020-10-09', 'UA',NULL , 1040),
+    (142, 'Mirzapur', 'Premium', '2018-11-16', 'A',NULL , 1041);
+
+
+INSERT INTO Coming_soon (Content_ID) VALUES
+    (139),
+    (140),
+    (141),
+    (142);
+
+
+INSERT INTO Content_Audio (Content_ID, Audio) VALUES
+    (103, 'English'),
+    (104, 'Hindi'),
+    (104, 'English'),
+    (105, 'Hindi'),
+    (106, 'Hindi'),
+    (106, 'English'),
+    (107, 'Hindi'),
+    (107, 'English'),
+    (108, 'Hindi'),
+    (108, 'English'),
+    (108, 'Tamil'),
+    (108, 'Telugu'),
+    (109, 'Hindi'),
+    (110, 'Hindi'),
+    (111, 'English'),
+    (111, 'Hindi'),
+    (112, 'Hindi'),
+    (113, 'english'),
+    (113, 'Tamil'),
+    (113, 'Hindi'),
+    (114, 'Hindi'),
+    (115, 'Hindi'),
+    (116, 'English'),
+    (117, 'Hindi'),
+    (117, 'English'),
+    (117, 'Tamil'),
+    (117, 'Telugu'),
+    (118, 'Gujarati'),
+    (119, 'Hindi'),
+    (120, 'Hindi'),
+    (121, 'Hindi'),
+    (121, 'Tamil'),
+    (122, 'English'),
+    (122, 'Hindi'),
+    (123, 'Hindi'),
+    (124, 'Hindi'),
+    (125, 'Hindi'),
+    (125, 'Gujarati'),
+    (126, 'Hindi'),
+    (127, 'Hindi'),
+    (128, 'Hindi'),
+    (129, 'Hindi'),
+    (130, 'Hindi'),
+    (131, 'Hindi'),
+    (132, 'Hindi'),
+    (133, 'Hindi'),
+    (133,'Marathi'),
+    (134, 'Hindi'),
+    (135, 'Hindi'),
+    (137, 'Hindi'),
+    (138, 'Hindi'),
+    (140, 'Hindi'),
+    (141, 'Hindi'),
+    (141,'English');
+
+
+INSERT INTO Content_Genre (Content_ID, Genre)
+VALUES
+    (103, 'Drama'),
+    (104, 'Biography'),
+    (104, 'Drama'),
+    (105, 'Comedy'),
+    (106, 'Drama'),
+    (107, 'Crime'),
+    (107, ' Thriller'),
+    (107, ' Drama'),
+    (108, 'Action'),
+    (108, 'Crime'),
+    (109, 'Drama'),
+    (110, 'Family'),
+    (111, 'Crime'),
+    (112, 'Music'),
+    (112, 'Mystery'),
+    (113, 'Crime'),
+    (113, ' Mystery'),
+    (114, 'Thriller'),
+    (115, 'Adventure'),
+    (116, 'Comedy'),
+    (117, 'Action'),
+    (118, 'Biography'),
+    (119, 'Action'),
+    (120, 'Comedy'),
+    (121, 'Mystery'),
+    (121, 'Thriller'),
+    (122, 'Drama'),
+    (123, 'Action'),
+    (124, 'Actioin'),
+    (125, 'Biography'),
+    (126, ' Crime'),
+    (127, 'Action'),
+    (127, 'Sci-Fi'),
+    (128, 'Comedy'),
+    (128, 'Sci-Fi'),
+    (129, 'Drama'),
+    (130, 'Romance'),
+    (130, 'Comedy'),
+    (131, 'Action'),
+    (132, 'Adventure'),
+    (133, 'Comedy'),
+    (134, 'Biography'),
+    (135, 'Romance'),
+    (136, 'Drama'),
+    (137, 'Action'),
+    (137, 'Adventure'),
+    (139, 'Comedy'),
+    (140, 'Action'),
+    (142, 'Adventure');
+
+INSERT INTO Content_Subtitle (Content_ID, Subtitle)
+VALUES
+    (103, 'Hindi'),
+    (104, 'English'),
+    (104, 'Hindi'),
+    (105, 'English'),
+    (106, 'English'),
+    (106, 'Hindi'),
+    (107, 'English'),
+    (107, 'Hindi'),
+    (108, 'English'),
+    (108, 'Hindi'),
+    (108, 'Tamil'),
+    (109, 'English'),
+    (110, 'English'),
+    (111, 'Hindi'),
+    (111, 'English'),
+    (112, 'English'),
+    (113, 'Hindi'),
+    (113, 'English'),
+    (114, 'English'),
+    (115, 'English'),
+    (116, 'Hindi'),
+    (117, 'English'),
+    (118, 'English'),
+    (119, 'English'),
+    (119, 'Hindi'),
+    (120, 'Hindi'),
+    (120, 'English'),
+    (121, 'English'),
+    (122, 'English'),
+    (123, 'English'),
+    (123, 'Hindi'),
+    (124, 'English'),
+    (125, 'English'),
+    (125, 'Hindi'),
+    (126, 'English'),
+    (127, 'English'),
+    (128, 'English'),
+    (129, 'English'),
+    (130, 'English'),
+    (131, 'English'),
+    (132, 'English'),
+    (133, 'English'),
+    (133, 'Hindi'),
+    (134, 'English'),
+    (135, 'English'),
+    (137, 'English'),
+    (138, 'English'),
+    (140, 'English'),
+    (141, 'English'),
+    (141, 'Hindi');
+
+INSERT INTO TV_Series (Content_ID, First_Air_Date, Total_Seasons, End_Date)
+VALUES 
+	(101, '2011-04-17', 8, '2019-05-19'),
+	(102, '2016-07-15', 3, '2022-05-27');
+	
+
+INSERT INTO Shows (Content_ID, Duration)
+VALUES
+    (105, '02:00:00'), -- Comicstaan 3
+    (119, '01:00:00'), -- Kapil Sharma Show
+    (123, '02:30:00'), -- Comedy Circus
+    (132, '01:30:00'), -- Comicstaan
+    (133, '01:45:00'), -- Comicstaan 2
+    (134, '01:15:00'), -- Kenny Sebastian
+    (135, '01:45:00'), -- Comic bassi
+    (136, '01:40:00'); -- Kanan Gill
+
+INSERT INTO Movies (Content_ID, Duration)
+VALUES
+    (103, '03:45:00'), -- Lagaan
+    (104, '02:40:00'), -- Dangal
+    (106, '02:50:00'), -- 3 Idiots
+    (107, '02:45:00'), -- Taare Zameen Par
+    (108, '02:30:00'), -- Chak De! India
+    (109, '02:30:00'), -- Gully Boy
+    (110, '02:15:00'), -- Andhadhun
+    (111, '02:20:00'), -- Queen
+    (112, '02:05:00'), -- Miracle No. 7
+    (113, '02:25:00'), -- Paan Singh Tomar
+    (114, '02:30:00'), -- PK
+    (115, '02:40:00'), -- Drishyam
+    (116, '05:15:00'), -- Gangs of Wasseypur
+    (117, '02:35:00'), -- Bajrangi Bhaijaan
+    (118, '02:15:00'), -- The White Tiger
+    (121, '02:25:00'), -- Article 15
+    (122, '01:45:00'), -- Tumbbad
+    (124, '01:55:00'), -- Delhi Belly
+    (125, '02:20:00'), -- Ghoul
+    (126, '02:30:00'), -- Shershaah
+    (127, '02:10:00'), -- The Comedy Club
+    (128, '02:20:00'), -- Article 370
+    (129, '03:00:00'), -- Shershaah 2
+    (130, '02:35:00'), -- Mukkabaaz
+    (131, '02:15:00'), -- Sonchiriya
+    (137, '02:30:00'), -- Drishyam 2.0
+    (138, '02:25:00'); -- Mukkabaaz 3.0
+
+
+-- Insert data into Episode table for Season 1 of "Stranger Things"
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID) 
+VALUES 
+(1, 1, '2016-07-15', 'Chapter One: The Vanishing of Will Byers', 'In a small town where everyone knows everyone, a young boy vanishes into thin air.', 8.4, '00:49:00', 102),
+(2, 1, '2016-07-15', 'Chapter Two: The Weirdo on Maple Street', 'The search for Will continues, Eleven escapes from the lab, and Nancy discovers the truth about Barb.', 8.2, '00:55:00', 102),
+(3, 1, '2016-07-15', 'Chapter Three: Holly, Jolly', 'An increasingly concerned Nancy looks for Barb and finds out what Jonathans been up to. Joyce is convinced Will is trying to talk to her.', 8.6, '00:42:00', 102),
+(4, 1, '2016-07-15', 'Chapter Four: The Body', 'Refusing to believe Will is dead, Joyce tries to connect with her son. The boys give Eleven a makeover. Nancy and Jonathan form an unlikely alliance.', 8.8, '00:48:00', 102),
+(5, 1, '2016-07-15', 'Chapter Five: The Flea and the Acrobat', 'Hopper breaks into the lab while Nancy and Jonathan confront the force that took Will. The boys ask Mr. Clarke how to travel to another dimension.', 8.9, '00:55:00', 102),
+(6, 1, '2016-07-15', 'Chapter Six: The Monster', 'A frantic Jonathan looks for Nancy in the darkness, but Steves looking for her, too. Hopper and Joyce uncover the truth about the labs experiments.', 9.1, '00:47:00', 102),
+(7, 1, '2016-07-15', 'Chapter Seven: The Bathtub', 'Eleven struggles to reach Will, while Lucas warns that "the bad men are coming." Nancy and Jonathan show the police what Jonathan caught on camera.', 8.7, '00:42:00', 102),
+(8, 1, '2016-07-15', 'Chapter Eight: The Upside Down', 'Dr. Brenner holds Hopper and Joyce for questioning while the boys wait with Eleven in the gym. Back at Wills, Nancy and Jonathan prepare for battle.', 9.2, '00:55:00', 102);
+
+
+-- Insert data into Episode table for Season 2 of "Stranger Things"
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID) 
+VALUES 
+(1, 2, '2017-10-27', 'Chapter One: MADMAX', 'As the town preps for Halloween, a high-scoring rival shakes things up in the arcade, and a skeptical Hopper inspects a field of rotting pumpkins.', 8.3, '00:54:00', 102),
+(2, 2, '2017-10-27', 'Chapter Two: Trick or Treat, Freak', 'After Will sees something terrible on trick-or-treat night, Mike wonders whether Elevens still out there. Nancy wrestles with the truth about Barb.', 8.0, '00:50:00', 102),
+(3, 2, '2017-10-27', 'Chapter Three: The Pollywog', 'Dustin adopts a strange new pet, and Eleven grows increasingly impatient. A well-meaning Bob urges Will to stand up to his fears.', 8.6, '00:52:00', 102),
+(4, 2, '2017-10-27', 'Chapter Four: Will the Wise', 'An ailing Will opens up to Joyce -- with disturbing results. While Hopper digs for the truth, Eleven unearths a surprising discovery.', 8.7, '00:45:00', 102),
+(5, 2, '2017-10-27', 'Chapter Five: Dig Dug', 'Nancy and Jonathan swap conspiracy theories with a new ally as Eleven searches for someone from her past. “Bob the Brain” tackles a difficult problem.', 8.8, '00:55:00', 102),
+(6, 2, '2017-10-27', 'Chapter Six: The Spy', 'Wills connection to a shadowy evil grows stronger, but no ones quite sure how to stop it. Elsewhere, Dustin and Steve forge an unlikely bond.', 8.9, '00:48:00', 102),
+(7, 2, '2017-10-27', 'Chapter Seven: The Lost Sister', 'Psychic visions draw Eleven to a band of violent outcasts and an angry girl with a shadowy past. Meanwhile, Lucas and Dustin investigate a suspicious stranger.', 8.2, '00:46:00', 102),
+(8, 2, '2017-10-27', 'Chapter Eight: The Mind Flayer', 'An unlikely hero steps forward when a deadly development puts the Hawkins Lab on lockdown, trapping Will and several others inside.', 9.1, '00:55:00', 102),
+(9, 2, '2017-10-27', 'Chapter Nine: The Gate', 'Eleven makes plans to finish what she started while the survivors turn up the heat on the monstrous force thats holding Will hostage.', 9.3, '00:54:00', 102);
+
+
+-- Insert data into Episode table for Season 3 of "Stranger Things"
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID) 
+VALUES 
+(1, 3, '2019-07-04', 'Chapter One: Suzie, Do You Copy?', 'Summer brings new jobs and budding romance. But the mood shifts when Dustins radio picks up a Russian broadcast, and Will senses something is wrong.', 8.0, '00:51:00', 102),
+(2, 3, '2019-07-04', 'Chapter Two: The Mall Rats', 'Nancy and Jonathan follow a lead, Steve and Robin sign on to a secret mission, and Max and Eleven go shopping. A rattled Billy has troubling visions.', 8.5, '00:50:00', 102),
+(3, 3, '2019-07-04', 'Chapter Three: The Case of the Missing Lifeguard', 'With El and Max looking for Billy, Will declares a day without girls. Steve and Dustin embark on a mission, and Joyce and Hopper return to Hawkins Lab.', 8.4, '00:52:00', 102),
+(4, 3, '2019-07-04', 'Chapter Four: The Sauna Test', 'A code red brings the gang back together to face a frighteningly familiar evil. Karen urges Nancy to keep digging, and Robin finds a useful map.', 8.7, '00:53:00', 102),
+(5, 3, '2019-07-04', 'Chapter Five: The Flayed', 'Strange surprises lurk inside an old farmhouse and deep beneath the Starcourt Mall. Meanwhile, the Mind Flayer is gathering strength.', 8.9, '00:54:00', 102),
+(6, 3, '2019-07-04', 'Chapter Six: E Pluribus Unum', 'Dr. Alexei reveals what the Russians have been building, and Eleven sees where Billy has been. Dustin and Erica stage a daring rescue.', 9.0, '00:58:00', 102),
+(7, 3, '2019-07-04', 'Chapter Seven: The Bite', 'With time running out - and an assassin close behind - Hoppers crew races back to Hawkins, where El and the kids are preparing for war.', 9.1, '00:52:00', 102),
+(8, 3, '2019-07-04', 'Chapter Eight: The Battle of Starcourt', 'Terror reigns in the food court when the Mind Flayer comes to collect. But down below, in the dark, the future of the world is at stake.', 9.3, '01:17:00', 102);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 1, '2011-04-17', 'Winter Is Coming', 'The first episode of Game of Thrones', 9.0, '00:59:00', 101),
+(2, 1, '2011-04-24', 'The Kingsroad', 'Jon Snow heads north to join the Night''s Watch; Daenerys learns the ways of Westeros; Tyrion seeks out his father.', 8.8, '01:00:00', 101),
+(3, 1, '2011-05-01', 'Lord Snow', 'Jon impresses Tyrion at Castle Black; Ned confronts his past and future at King''s Landing; Daenerys finds herself at odds with Viserys.', 8.7, '01:00:00', 101),
+(4, 1, '2011-05-08', 'Cripples, Bastards, and Broken Things', 'Eddard investigates Jon Arryn''s death; Jon befriends Samwell Tarly, a coward who has come to join the Night''s Watch.', 8.8, '01:00:00', 101),
+(5, 1, '2011-05-15', 'The Wolf and the Lion', 'Incensed over news of Daenerys'' alliance with the Dothrakis, Robert orders a preemptive strike on the Targaryens that drives a wedge in his relationship with Ned.', 9.1, '01:00:00', 101),
+(6, 1, '2011-05-22', 'A Golden Crown', 'Viserys is crowned Khal Drogo''s queen; Robert meets a tragic end; Arya receives a gift from Jaqen.', 9.2, '01:00:00', 101),
+(7, 1, '2011-05-29', 'You Win or You Die', 'Robert has been injured while hunting and is dying. Jon and the others finally take their vows to the Night''s Watch. A man, sent by Robert, is captured for trying to poison Daenerys. Furious, Drogo vows to attack the Seven Kingdoms.', 9.3, '01:00:00', 101),
+(8, 1, '2011-06-05', 'The Pointy End', 'Eddard and his men are betrayed and captured by the Lannisters. When word reaches Robb, he plans to go to war to rescue them. The White Walkers attack the Wall. Tyrion returns to his father with some new friends.', 9.0, '01:00:00', 101),
+(9, 1, '2011-06-12', 'Baelor', 'Robb goes to war against the Lannisters. Jon finds himself struggling on deciding if his place is with Robb or the Night''s Watch. Drogo has fallen ill from a fresh battle wound. Daenerys is desperate to save him.', 9.6, '01:00:00', 101),
+(10, 1, '2011-06-19', 'Fire and Blood', 'With Ned dead, Robb vows to get revenge on the Lannisters. Jon must officially decide if his place is with Robb or the Night''s Watch. Daenerys says her final goodbye to Drogo.', 9.5, '01:00:00', 101);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 2, '2012-04-01', 'The North Remembers', 'As Robb Stark and his northern army continue the war against the Lannisters, Tyrion arrives in King''s Landing to counsel Joffrey and temper the young king''s excesses. On the island of Dragonstone, Stannis Baratheon plots an invasion to claim his late brother''s throne, allying himself with the fiery Melisandre, a strange priestess of a stranger god.', 8.9, '00:55:00', 101),
+(2, 2, '2012-04-08', 'The Night Lands', 'In the wake of a bloody purge in the capital, Tyrion chastens Cersei for alienating the king''s subjects. On the road north, Arya shares a secret with Gendry, a Night''s Watch recruit. With supplies dwindling, one of Dany''s scouts returns with news of their position. After nine years as a Stark ward, Theon Greyjoy reunites with his father Balon, who wants to restore the ancient Kingdom of the Iron Islands.', 8.7, '00:58:00', 101),
+(3, 2, '2012-04-15', 'What Is Dead May Never Die', 'At the Red Keep, Tyrion plots three alliances through the promise of marriage. Catelyn arrives in the Stormlands to forge an alliance of her own. But King Renly, his new wife Margaery, and her brother Loras Tyrell have other plans. At Winterfell, Luwin tries to decipher Bran''s dreams.', 8.8, '00:59:00', 101),
+(4, 2, '2012-04-22', 'Garden of Bones', 'Joffrey punishes Sansa for Robb''s victories while Tyrion and Bronn scramble to temper the king''s cruelty. Catelyn entreats Stannis and Renly to unite against the Lannisters. Dany and her exhausted khalasar arrive at the gates of Qarth, a prosperous city with strong walls and rulers who greet her outside them. Tyrion coerces a relative into being his eyes and ears. Arya and Gendry are taken to Harrenhal, where their lives rest in the hands of "The Mountain," Gregor Clegane.', 9.0, '00:55:00', 101),
+(5, 2, '2012-04-29', 'The Ghost of Harrenhal', 'The Baratheon rivalry ends, driving Catelyn to flee and Littlefinger to act. At King''s Landing, Tyrion''s source alerts him to Joffrey''s defense plan - and a mysterious secret weapon. Theon sails to the Stony Shore to prove he''s worthy to be called Ironborn. In Harrenhal, Arya receives a promise from Jaqen H''ghar, one of three prisoners she saved from the Gold Cloaks. The Night''s Watch arrive at the Fist of the First Men, an ancient ringfort surrounded by a circle of stones. Inside the structure, they find a recent camp of wildlings.', 8.9, '00:58:00', 101),
+(6, 2, '2012-05-06', 'The Old Gods and the New', 'Theon completes his master stroke. In King''s Landing, the Lannisters send Myrcella away from harm, and Arya escapes from Harrenhal. House Stark welcomes a surprise visitor. Daenerys takes control of her destiny.', 8.8, '00:59:00', 101),
+(7, 2, '2012-05-13', 'A Man Without Honor', 'Jaime meets a relative he never expected. Theon tries to prove himself. Joffrey meets his subjects. Arya encounters a group of outlaws.', 9.1, '00:55:00', 101),
+(8, 2, '2012-05-20', 'The Prince of Winterfell', 'At Winterfell, Theon receives a visitor and holds down the fort. Arya calls in her final debt with Jaqen. Robb is betrayed. Tyrion and Varys find common ground. Dany ignores Jorah''s advice. Stannis and Davos approach their destination, and Davos is offered a reward.', 9.0, '00:58:00', 101),
+(9, 2, '2012-05-27', 'Blackwater', 'Tyrion and the Lannisters fight for their lives as Stannis'' fleet assaults King''s Landing.', 9.7, '00:59:00', 101),
+(10, 2, '2012-06-03', 'Valar Morghulis', 'Tyrion awakens to a changed situation. King Joffrey doles out rewards to his subjects. As Theon stirs his men to action, Luwin offers some final advice. Brienne silences Jaime; Arya receives a gift from Jaqen; Dany goes to a strange place; Jon proves himself to Qhorin.', 9.6, '00:55:00', 101);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 3, '2013-03-31', 'Valar Dohaeris', 'Jon is brought before Mance Rayder, the King Beyond the Wall, while the Night''s Watch survivors retreat south. In King''s Landing, Tyrion asks for his reward. Littlefinger offers Sansa a way out. Cersei hosts a dinner for the royal family. Daenerys sails into Slaver''s Bay.', 8.8, '00:57:00', 101),
+(2, 3, '2013-04-07', 'Dark Wings, Dark Words', 'Brienne follows a new lead on the road with Podrick. Tyrion finds an ally. Jon seeks counsel. Arya encounters the Brotherhood Without Banners.', 8.7, '00:56:00', 101),
+(3, 3, '2013-04-14', 'Walk of Punishment', 'Robb and Catelyn arrive at the Twins for the wedding. Jon is put to the test to see where his loyalties truly lie. Brans group decides to split up. Daenerys plans an invasion of Yunkai.', 9.1, '00:54:00', 101),
+(4, 3, '2013-04-21', 'And Now His Watch Is Ended', 'The Night''s Watch takes stock. Varys meets his better. Arya is taken to the commander of the Brotherhood. Dany exchanges a chain for a whip.', 9.4, '00:58:00', 101),
+(5, 3, '2013-04-28', 'Kissed by Fire', 'The Hound is judged by the gods; Jaime is judged by men. Jon proves himself; Robb is betrayed. Tyrion learns the cost of weddings.', 9.3, '00:55:00', 101),
+(6, 3, '2013-05-05', 'The Climb', 'Tywin plans strategic unions for the Lannisters. Melisandre visits the Riverlands. Robb weighs a compromise to repair his alliance with House Frey. Roose Bolton decides what to do with Jaime Lannister. Jon, Ygritte, and the Wildlings face a daunting climb.', 9.2, '00:59:00', 101),
+(7, 3, '2013-05-12', 'The Bear and the Maiden Fair', 'Dany exchanges gifts with a slave lord outside of Yunkai. As Sansa frets about her prospects, Shae chafes at Tyrion''s new situation. Tywin counsels the king, and Melisandre reveals a secret to Gendry. Brienne faces a formidable foe in Harrenhal.', 9.0, '00:56:00', 101),
+(8, 3, '2013-05-19', 'Second Sons', 'King’s Landing hosts a wedding, and Tyrion and Sansa spend the night together. Daenerys meets the Titan''s Bastard. Davos demands proof from Melisandre. Sam and Gilly meet an older gentleman.', 9.1, '00:57:00', 101),
+(9, 3, '2013-05-26', 'The Rains of Castamere', 'Robb presents himself to Walder Frey, and Edmure meets his bride. Jon faces his harshest test yet. Bran discovers a new gift. Daario and Jorah debate how to take Yunkai. House Frey joins with House Tully.', 9.9, '00:52:00', 101),
+(10, 3, '2013-06-02', 'Mhysa', 'Joffrey challenges Tywin. Bran tells a ghost story. In Dragonstone, mercy comes from strange quarters. Daenerys waits to see if she is a conqueror or a liberator.', 9.5, '00:58:00', 101);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 4, '2014-04-06', 'Two Swords', 'Tyrion welcomes a guest to King''s Landing. At Castle Black, Jon stands trial. Daenerys is pointed to Meereen, the mother of all slave cities. Arya runs into an old friend.', 8.9, '00:58:00', 101),
+(2, 4, '2014-04-13', 'The Lion and the Rose', 'Tyrion lends Jaime a hand. Joffrey and Margaery host a breakfast. At Dragonstone, Stannis loses patience with Davos. Ramsay finds a purpose for his pet. North of the Wall, Bran sees where they must go.', 9.7, '00:55:00', 101),
+(3, 4, '2014-04-20', 'Breaker of Chains', 'Tyrion ponders his options. Tywin extends an olive branch. Sam realizes Castle Black isn''t safe, and Jon proposes a bold plan. The Hound teaches Arya the way things are. Dany chooses her champion.', 8.6, '00:57:00', 101),
+(4, 4, '2014-04-27', 'Oathkeeper', 'Dany balances justice and mercy. Jaime tasks Brienne with his honor. Jon secures volunteers while Bran, Jojen, Meera, and Hodor stumble on shelter.', 9.0, '00:54:00', 101),
+(5, 4, '2014-05-04', 'First of His Name', 'Cersei and Tywin plot the Crown''s next move. Dany discusses future plans. Jon Snow embarks on a new mission.', 8.8, '00:56:00', 101),
+(6, 4, '2014-05-11', 'The Laws of Gods and Men', 'Stannis and Davos set sail with a new strategy. Dany meets with supplicants. Tyrion faces down his father in the throne room.', 9.3, '00:59:00', 101),
+(7, 4, '2014-05-18', 'Mockingbird', 'Tyrion enlists an unlikely ally. Daario entreats Dany to allow him to do what he does best. Jon''s warnings about the Wall''s vulnerability fall on deaf ears. Brienne follows a new lead on the road with Pod.', 9.2, '00:56:00', 101),
+(8, 4, '2014-06-01', 'The Mountain and the Viper', 'Unexpected visitors arrive in Mole''s Town. Littlefinger''s motives are questioned. Ramsay tries to prove himself to his father. Tyrion''s fate is decided.', 9.7, '00:55:00', 101),
+(9, 4, '2014-06-08', 'The Watchers on the Wall', 'Jon Snow and the Night''s Watch face a big challenge.', 9.9, '00:52:00', 101),
+(10, 4, '2014-06-15', 'The Children', 'Dany makes a difficult decision in Meereen. Jon recruits the help of an unexpected ally. Brienne searches for Sansa. Theon remains under Ramsay''s control.', 9.5, '00:58:00', 101);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 5, '2015-04-12', 'The Wars to Come', 'Cersei and Jaime adjust to a world without Tywin. Varys reveals a conspiracy to Tyrion. Daenerys faces a new threat to her rule. Jon is caught between two kings.', 9.0, '00:58:00', 101),
+(2, 5, '2015-04-19', 'The House of Black and White', 'Arya arrives in Braavos. Podrick and Brienne run into trouble on the road. Cersei fears for her daughter''s safety in Dorne as Ellaria Sand seeks revenge for Oberyn''s death. Stannis tempts Jon.', 9.1, '00:55:00', 101),
+(3, 5, '2015-04-26', 'High Sparrow', 'In Braavos, Arya sees the Many-Faced God. In King''s Landing, Queen Margaery enjoys her new husband. Tyrion and Varys walk the Long Bridge of Volantis.', 9.0, '00:57:00', 101),
+(4, 5, '2015-05-03', 'Sons of the Harpy', 'The Faith Militant grow increasingly aggressive. Jaime and Bronn head south. Dany attends the grand reopening of the fighting pits. Jon proves himself to the Wildlings.', 8.9, '00:54:00', 101),
+(5, 5, '2015-05-10', 'Kill the Boy', 'Dany makes a difficult decision in Meereen. Jon recruits the help of an unexpected ally. Brienne searches for Sansa. Theon remains under Ramsay''s control.', 9.2, '00:59:00', 101),
+(6, 5, '2015-05-17', 'Unbowed, Unbent, Unbroken', 'Arya trains. Jorah and Tyrion run into slavers. Trystane and Myrcella make plans. Jaime and Bronn reach their destination. The Sand Snakes attack.', 8.7, '00:56:00', 101),
+(7, 5, '2015-05-24', 'The Gift', 'Jon prepares for conflict. Sansa tries to talk to Theon. Brienne waits for a sign. Stannis remains stubborn. Jaime attempts to reconnect with family.', 9.0, '00:57:00', 101),
+(8, 5, '2015-05-31', 'Hardhome', 'Arya makes progress in her training. Sansa confronts an old friend. Cersei struggles. Jon travels.', 9.5, '00:55:00', 101),
+(9, 5, '2015-06-07', 'The Dance of Dragons', 'Stannis confronts a troubling decision. Jon returns to the Wall. Mace visits the Iron Bank. Arya encounters someone from her past. Dany reluctantly oversees a traditional celebration of athleticism.', 9.3, '00:58:00', 101),
+(10, 5, '2015-06-14', 'Mother’s Mercy', 'Stannis marches. Dany is surrounded by strangers. Cersei seeks forgiveness. Jon is challenged.', 9.8, '00:56:00', 101);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 6, '2016-04-24', 'The Red Woman', 'Jon Snow is dead. Daenerys meets a strong man. Cersei sees her daughter again.', 8.9, '00:58:00', 101),
+(2, 6, '2016-05-01', 'Home', 'Bran trains with the Three-Eyed Raven. In King''s Landing, Jaime advises Tommen. Tyrion demands good news, but has to make his own. At Castle Black, the Night''s Watch stands behind Thorne. Ramsay Bolton proposes a plan, and Balon Greyjoy entertains other proposals.', 9.5, '00:55:00', 101),
+(3, 6, '2016-05-08', 'Oathbreaker', 'Daenerys meets her future. Bran meets the past. Tommen confronts the High Sparrow. Arya trains to be No One. Varys finds an answer. Ramsay gets a gift.', 9.1, '00:57:00', 101),
+(4, 6, '2016-05-15', 'Book of the Stranger', 'Tyrion strikes a deal. Jorah and Daario undertake a difficult task. Jaime and Cersei try to improve their situation.', 9.3, '00:54:00', 101),
+(5, 6, '2016-05-22', 'The Door', 'Tyrion seeks a strange ally. Bran learns a great deal. Brienne goes on a mission. Arya is given a chance to prove herself.', 9.8, '00:59:00', 101),
+(6, 6, '2016-05-29', 'Blood of My Blood', 'An old foe comes back into the picture. Gilly meets Sam''s family. Arya faces a difficult choice. Jaime faces off against the High Sparrow.', 9.2, '00:56:00', 101),
+(7, 6, '2016-06-05', 'The Broken Man', 'The High Sparrow eyes another target. Jaime confronts a hero. Arya makes a plan. The North is reminded.', 9.0, '00:57:00', 101),
+(8, 6, '2016-06-12', 'No One', 'While Jaime weighs his options, Cersei answers a request. Tyrion''s plans bear fruit. Arya faces a new test.', 9.4, '00:55:00', 101),
+(9, 6, '2016-06-19', 'Battle of the Bastards', 'Jon and Sansa face Ramsay Bolton on the fields of Winterfell. Daenerys strikes back at her enemies. Theon and Yara arrive in Meereen.', 9.9, '01:02:00', 101),
+(10, 6, '2016-06-26', 'The Winds of Winter', 'Cersei faces her trial.', 9.7, '01:05:00', 101);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 7, '2017-07-16', 'Dragonstone', 'Jon organizes the defense of the North. Cersei tries to even the odds. Daenerys comes home.', 9.1, '00:59:00', 101),
+(2, 7, '2017-07-23', 'Stormborn', 'Daenerys receives an unexpected visitor. Jon faces a revolt. Tyrion plans the conquest of Westeros.', 8.9, '00:56:00', 101),
+(3, 7, '2017-07-30', 'The Queen''s Justice', 'Daenerys holds court. Cersei returns a gift. Jaime learns from his mistakes.', 9.3, '00:58:00', 101),
+(4, 7, '2017-08-06', 'The Spoils of War', 'Daenerys fights back. Jaime faces an unexpected situation. Arya comes home.', 9.8, '00:55:00', 101),
+(5, 7, '2017-08-13', 'Eastwatch', 'Daenerys demands loyalty from the surviving Lannister soldiers. Jon heeds Bran''s warning about White Walkers on the move. Cersei vows to vanquish anyone or anything that stands in her way.', 9.4, '00:57:00', 101),
+(6, 7, '2017-08-20', 'Beyond the Wall', 'Jon and his team go beyond the wall to capture a wight. Daenerys has to make a tough decision.', 9.6, '00:58:00', 101),
+(7, 7, '2017-08-27', 'The Dragon and the Wolf', 'A meeting is held in King''s Landing. Problems arise in Winterfell.', 9.9, '01:20:00', 101);
+
+INSERT INTO Episode (Episode_No, Season_No, Release_Date, Title, Description, Rating, Duration, Content_ID)
+VALUES
+(1, 8, '2019-04-14', 'Winterfell', 'The Great War begins. Jon and Daenerys arrive in Winterfell and are met with skepticism. Sam learns about the fate of his family. Cersei gives Euron the reward he aims for.', 9.0, '00:54:00', 101),
+(2, 8, '2019-04-21', 'A Knight of the Seven Kingdoms', 'Jaime faces judgment and Winterfell prepares for the battle to come.', 9.5, '00:58:00', 101),
+(3, 8, '2019-04-28', 'The Long Night', 'The Night King and his army have arrived at Winterfell and the Great War begins.', 9.8, '01:22:00', 101),
+(4, 8, '2019-05-05', 'The Last of the Starks', 'The Battle of Winterfell is over and a new chapter for Westeros begins.', 9.2, '01:18:00', 101),
+(5, 8, '2019-05-12', 'The Bells', 'Daenerys and Cersei weigh their options as an epic conflict looms at King''s Landing.', 9.7, '01:20:00', 101),
+(6, 8, '2019-05-19', 'The Iron Throne', 'The fate of the Seven Kingdoms is decided as the series draws to a close.', 9.6, '01:30:00', 101);
+
+
+
+INSERT INTO Statistics (Content_ID, Total_View, Revenue, Budget)
+VALUES
+    (103, 1000000, 75000000.00, 35000000.00),
+    (104, 1500000, 85000000.00, 45000000.00),
+    (105, 500000, 30000000.00, 15000000.00),
+    (106, 1200000, 70000000.00, 35000000.00),
+    (107, 2000000, 120000000.00, 50000000.00),
+    (108, 1800000, 95000000.00, 40000000.00),
+    (109, 800000, 55000000.00, 25000000.00),
+    (110, 900000, 60000000.00, 28000000.00),
+    (111, 2200000, 130000000.00, 60000000.00),
+    (112, 1300000, 70000000.00, 38000000.00),
+    (113, 1900000, 100000000.00, 45000000.00),
+    (114, 1000000, 80000000.00, 35000000.00),
+    (115, 700000, 55000000.00, 28000000.00),
+    (116, 800000, 60000000.00, 30000000.00),
+    (117, 2100000, 135000000.00, 65000000.00),
+    (118, 850000, 70000000.00, 32000000.00),
+    (119, 1600000, 95000000.00, 42000000.00),
+    (120, 700000, 55000000.00, 28000000.00),
+    (121, 1900000, 100000000.00, 45000000.00),
+    (122, 1000000, 75000000.00, 35000000.00),
+    (123, 1400000, 80000000.00, 42000000.00),
+    (124, 750000, 60000000.00, 28000000.00),
+    (125, 3000000, 150000000.00, 70000000.00),
+    (126, 950000, 80000000.00, 40000000.00),
+    (127, 500000, 65000000.00, 30000000.00),
+    (128, 1200000, 70000000.00, 35000000.00),
+    (129, 400000, 45000000.00, 18000000.00),
+    (130, 1800000, 95000000.00, 40000000.00),
+    (131, 800000, 60000000.00, 30000000.00),
+    (132, 1000000, 80000000.00, 35000000.00),
+    (133, 600000, 55000000.00, 28000000.00),
+    (134, 700000, 60000000.00, 30000000.00),
+    (135, 2000000, 120000000.00, 50000000.00),
+    (136, 950000, 80000000.00, 40000000.00),
+    (137, 3200000, 160000000.00, 75000000.00),
+    (139, 600000, 55000000.00, 28000000.00),
+    (140, 800000, 60000000.00, 30000000.00),
+    (142, 3500000, 180000000.00, 80000000.00);
+
+
+INSERT INTO Actor (Actor_ID, Name, Gender, DOB, Nationality) VALUES
+    (1, 'Sean Bean', 'Male', '1959-04-17', 'British'),
+    (2, 'Mark Addy', 'Male', '1964-01-14', 'British'),
+    (3, 'Nikolaj Coster-Waldau', 'Male', '1970-07-27', 'Danish'),
+    (4, 'Michelle Fairley', 'Female', '1964-01-11', 'Northern Irish'),
+    (5, 'Lena Headey', 'Female', '1973-10-03', 'British'),
+    (6, 'Emilia Clarke', 'Female', '1986-10-23', 'British'),
+    (7, 'Iain Glen', 'Male', '1961-06-24', 'Scottish'),
+    (8, 'Aidan Gillen', 'Male', '1968-04-24', 'Irish'),
+    (9, 'Kit Harington', 'Male', '1986-12-26', 'British'),
+    (10, 'Sophie Turner', 'Female', '1996-02-21', 'British'),
+    (11, 'Maisie Williams', 'Female', '1997-04-15', 'British'),
+    (12, 'Richard Madden', 'Male', '1986-06-18', 'British'),
+    (13, 'Alfie Allen', 'Male', '1986-09-12', 'British'),
+    (14, 'Isaac Hempstead Wright', 'Male', '1999-04-09', 'British'),
+    (15, 'Jack Gleeson', 'Male', '1992-05-20', 'Irish'),
+    (16, 'Rory McCann', 'Male', '1969-04-24', 'Scottish'),
+    (17, 'Peter Dinklage', 'Male', '1969-06-11', 'American'),
+    (18, 'Jason Momoa', 'Male', '1979-08-01', 'American'),
+    (19, 'Harry Lloyd', 'Male', '1983-11-17', 'British'),
+    (20, 'Richard Dormer', 'Male', '1969-11-11', 'Northern Irish'),
+    (21, 'Millie Bobby Brown', 'Female', '2004-02-19', 'British'),
+    (22, 'Finn Wolfhard', 'Male', '2002-12-23', 'Canadian'),
+    (23, 'Gaten Matarazzo', 'Male', '2002-09-08',  'American'),
+    (24, 'Caleb McLaughlin', 'Male', '2001-10-13', 'American'),
+    (25, 'Noah Schnapp', 'Male', '2004-10-03',  'American'),
+    (26, 'Sadie Sink', 'Female', '2002-04-16',  'American'),
+    (27, 'Winona Ryder', 'Female', '1971-10-29', 'American'),
+    (28, 'David Harbour', 'Male', '1975-04-10', 'American'),
+    (29, 'Natalia Dyer', 'Female', '1995-01-13', 'American'),
+    (30, 'Charlie Heaton', 'Male', '1994-02-06',  'British'),
+    (31, 'Shah Rukh Khan', 'Male', '1965-11-02', 'Indian'),
+    (32, 'Salman Khan', 'Male', '1965-12-27', 'Indian'),
+    (33, 'Kriti Sanon', 'Female', '1990-07-27', 'Indian'),
+    (34, 'Deepika Padukone', 'Female', '1986-01-05', 'Indian'),
+    (35, 'Aamir Khan', 'Male', '1965-03-14', 'Indian'),
+    (36, 'Ranbir Kapoor', 'Male', '1982-09-28', 'Indian'),
+    (37, 'Alia Bhatt', 'Female', '1993-03-15', 'Indian'),
+    (38, 'Anushka Sharma', 'Female', '1988-05-01', 'Indian'),
+    (39, 'Ranveer Singh', 'Male', '1985-07-06', 'Indian'),
+    (40, 'Vicky Kaushal', 'Male', '1988-05-16', 'Indian'),
+    (41, 'Nawazuddin Siddiqui', 'Male', '1974-05-19', 'Bangladesh'),
+    (42, 'Ayushmann Khurrana', 'Male', '1984-09-14', 'Indian'),
+    (43, 'Akshay Kumar', 'Male', '1967-09-09', 'Indian'),
+    (44, 'Kangana Ranaut', 'Female', '1987-03-23', 'Pakistran'),
+    (45, 'Priyanka Chopra', 'Female', '1982-07-18', 'Indian'),
+    (46, 'Varun Dhawan', 'Male', '1987-04-24', 'Indian'),
+    (47, 'Hrithik Roshan', 'Male', '1974-01-10', 'Indian'),
+    (48, 'Ajay Devgn', 'Male', '1969-04-02', 'Indian'),
+    (49, 'Katrina Kaif', 'Female', '1983-07-16', 'Indian'),
+    (50, 'Sonam Kapoor', 'Female', '1985-06-09', 'Indian'),
+    (51, 'Rajkummar Rao', 'Male', '1984-08-31', 'Indian'),
+    (52, 'Anil Kapoor', 'Male', '1956-12-24', 'Indian'),
+    (53, 'Tabu', 'Female', '1971-11-04', 'Sri lanka'),
+    (54, 'Shraddha Kapoor', 'Female', '1987-03-03', 'Indian'),
+    (55, 'Kareena Kapoor', 'Female', '1980-09-21', 'Indian'),
+    (56, 'Sushant Singh Rajput', 'Male', '1986-01-21', 'Indian'),
+    (57, 'Rajinikanth', 'Male', '1950-12-12', 'Indian'),
+    (58, 'Vidya Balan', 'Female', '1979-01-01', 'Indian'),
+    (59, 'Naseeruddin Shah', 'Male', '1950-07-20', 'Indian'),
+    (60, 'Madhuri Dixit', 'Female', '1967-05-15', 'Indian'),
+    (61, 'Nana Patekar', 'Male', '1951-01-01', 'Indian'),
+    (62, 'Irrfan Khan', 'Male', '1967-01-07', 'Indian'),
+    (63, 'Dilip Kumar', 'Male', '1922-12-11', 'Indian'),
+    (64, 'Sridevi', 'Female', '1963-08-13', 'Indian'),
+    (65, 'Kajol', 'Female', '1974-08-05', 'Indian'),
+    (66, 'Dev Anand', 'Male', '1923-09-26', 'Indian'),
+    (67, 'Meena Kumari', 'Female', '1933-08-01', 'Indian'),
+    (68, 'Dharmendra', 'Male', '1935-12-08', 'Indian'),
+    (69, 'Rekha', 'Female', '1954-10-10', 'Indian'),
+    (70, 'Shahid Kapoor', 'Male', '1981-02-25', 'Indian'),
+    (71, 'Samay raina', 'Male', '1986-01-21', 'Indian'),
+    (72, 'Bassi', 'Male', '1950-12-12', 'Indian'),
+    (73, 'Zakir khan ', 'Female', '1979-01-01', 'Indian'),
+    (74, 'Biswa rath', 'Male', '1950-07-20', 'Indian'),
+    (75, 'Kanan gill', 'Female', '1967-05-15', 'Indian'),
+    (76, 'Bharti singh', 'Male', '1951-01-01', 'Indian'),
+    (77, 'Gurlin pannu', 'Male', '1967-01-07', 'Indian'),
+    (78, 'Zarna gerg', 'Male', '1922-12-11', 'Indian'),
+    (79, 'Manoj Bajpayee', 'Male', '1969-04-23', 'Indian'),
+    (80, 'Adarsh Gourav', 'Male', '1994-05-23', 'Indian'),
+    (81, 'Imran Khan', 'Male', '1983-01-13', 'Indian'),
+    (82, 'Sidharth Malhotra', 'Male', '1985-01-16', 'Indian'),
+    (83, 'Atul Srivastava', 'Male', '1955-10-22', 'Indian'),
+    (84, 'Mohammed Zeeshan Ayyub', 'Male', '1983-01-08', 'Indian'),
+    (85, 'Saif Ali Khan', 'Male', '1970-08-16', 'Indian'),
+    (86, 'Pratik Gandhi', 'Male', '1978-05-12', 'Indian'),
+    (87, 'Pankaj Tripathi', 'Male', '1976-09-05', 'Indian');
+
+
+
+INSERT INTO Content_Cast (Role, Actor_ID, Content_ID) VALUES
+('Eddard Stark', 1, 101),
+('Robert Baratheon', 2, 101),
+('Jaime Lannister', 3, 101),
+('Catelyn Stark', 4, 101),
+('Cersei Lannister', 5, 101),
+('Daenerys Targaryen', 6, 101),
+('Jorah Mormont', 7, 101),
+('Petyr Baelish', 8, 101),
+('Jon Snow', 9, 101),
+('Sansa Stark', 10, 101),
+('Arya Stark', 11, 101),
+('Robb Stark', 12, 101),
+('Theon Greyjoy', 13, 101),
+('Bran Stark', 14, 101),
+('Joffrey Baratheon', 15, 101),
+('Sandor Clegane', 16, 101),
+('Tyrion Lannister', 17, 101),
+('Khal Drogo', 18, 101),
+('Viserys Targaryen', 19, 101),
+('Beric Dondarrion', 20, 101),
+('Eleven', 21, 102),
+('Mike Wheeler', 22, 102),
+('Dustin Henderson', 23, 102),
+('Lucas Sinclair', 24, 102),
+('Will Byers', 25, 102),
+('Max Mayfield', 26, 102),
+('Joyce Byers', 27, 102),
+('Jim Hopper', 28, 102),
+('Nancy Wheeler', 29, 102),
+('Jonathan Byers', 30, 102),
+('Bhuvan', 35, 103),
+('Mahavir Singh Phogat', 35, 104),
+('Akriti', 33, 105),
+('Akriti', 37, 105),
+('Rancho', 35, 106),
+('Ram Shankar Nikumbh', 35, 107),
+('Kabir Khan', 31, 108),
+('Murad Ahmed', 39, 109),
+('Akash', 42, 110),
+('Rani Mehra', 44, 111),
+('Hari Kaka', 35, 112),
+('Paan Singh Tomar', 62, 113),
+('PK', 35, 114),
+('Vijay Salgaonkar', 48, 115),
+('DGP Meera Deshmukh', 53, 125),
+('Lakhna', 56, 131),
+('Zakir Khan', 73, 132),
+('Kenny Sebastian', 74, 133),
+('Bassi', 72, 135),
+('Kanan Gill', 75, 136),
+('IG Meera Deshmukh', 53, 137),
+('Pawan Kumar Chaturvedi (Bajrangi)', 32, 117);
+
+INSERT INTO Starred_in (Actor_ID, Content_ID)
+VALUES
+    (35, 103), -- Aamir Khan in Lagaan
+    (35, 104), -- Aamir Khan in Dangal
+    (33, 105), -- Kriti Sanon in Comicstaan 3
+    (35, 106), -- Aamir Khan in 3 Idiots
+    (35, 107), -- Aamir Khan in Taare Zameen Par
+    (31, 108), -- Shah Rukh Khan in Chak De! India
+    (39, 109), -- Ranveer Singh in Gully Boy
+    (42, 110), -- Ayushmann Khurrana in Andhadhun
+    (44, 111), -- Kangana Ranaut in Queen
+    (35, 112), -- Aamir Khan in Miracle No. 7
+    (62, 113), -- Irrfan Khan in Paan Singh Tomar
+    (35, 114), -- Aamir Khan in PK
+    (48, 115), -- Ajay Devgn in Drishyam
+    (53, 125), -- Tabu in Ghoul
+    (56, 131), -- Sushant Singh Rajput in Sonchiriya
+    (73, 132), -- Zakir Khan in Comicstaan
+    (74, 133), -- Kenny Sebastian in Comicstaan 2
+    (72, 135), -- Bassi in Comic bassi
+    (75, 136), -- Kanan Gill in Kanan Gill
+    (53, 137), -- Tabu in Drishyam 2.0
+    (32, 117); -- Salman Khan in Bajrangi Bhaijaan
+
+
+-- Inserting data into Ott_User table
+INSERT INTO Ott_User (User_ID, Name, Gender, DOB, Email, Contact_No, Street, City, Start_date, Subscription_type, Duration) VALUES
+    (3001, 'John Doe', 'Male', '1990-05-15', 'john@example.com', '9876543210', '123 Main St', 'New York', '2023-01-01', 'Premium', 30),
+    (3002, 'Jane Smith', 'Female', '1988-08-25', 'jane@example.com', '9876543211', '456 Elm St', 'Los Angeles', '2022-12-01', 'Free', 0),
+    (3003, 'Alice Johnson', 'Female', '1995-03-10', 'alice@example.com', '9876543212', '789 Oak St', 'Chicago', '2023-02-15', 'Premium', 60),
+    (3004, 'Bob Williams', 'Male', '1992-11-20', 'bob@example.com', '9876543213', '101 Pine St', 'San Francisco', '2023-03-20', 'Free', 90);
+
+-- Inserting data into Watchlist table
+INSERT INTO Watchlist (User_ID, Watchlist) VALUES
+    (3001, 'Lagaan'), 
+    (3001, '3 Idiots'), 
+    (3001, 'Taare Zameen Par'),
+    (3002, 'Queen'), 
+    (3002, 'Chak De! India'), 
+    (3002, 'Kapil Sharma Show'),
+    (3003, 'Gully Boy'), 
+    (3003, 'Article 15'), 
+    (3003, 'Tumbbad'),
+    (3004, 'Gangs of Wasseypur'), 
+    (3004, 'Drishyam'), 
+    (3004, 'Shershaah');
+
+-- Inserting data into Streams table
+INSERT INTO Streams (Stream_ID, Stream_date, Stream_Start_time, Duration, Content_ID, User_ID) VALUES
+    (4001, '2024-04-15', '20:00:00', '02:30:00', 103, 3001),
+    (4002, '2024-04-16', '18:30:00', '01:45:00', 106, 3002),
+    (4003, '2024-04-16', '21:15:00', '01:30:00', 117, 3003),
+    (4004, '2024-04-17', '19:45:00', '02:00:00', 121, 3004);
+
+
+-- Inserting data into Advertisement table
+INSERT INTO Advertisement (Advertise_ID, Product_Name, Company_Name, AD_Cost, Views, Revenue)
+VALUES
+    (901, 'Samsung Galaxy S21', 'Samsung Electronics', 50000.0, 1000000, 7500000.0),
+    (902, 'Nike Air Max', 'Nike, Inc.', 30000.0, 800000, 6000000.0),
+    (903, 'Coca-Cola', 'The Coca-Cola Company', 40000.0, 1200000, 9000000.0),
+    (904, 'PlayStation 5', 'Sony Corporation', 60000.0, 1500000, 12000000.0),
+    (905, 'Apple Watch Series 6', 'Apple Inc.', 55000.0, 1300000, 10000000.0);
+
+-- Inserting data into Advertise_Genre table
+INSERT INTO Advertise_Genre (Advertise_ID, Genre)
+VALUES
+    (901, 'Technology'),
+    (901, 'Electronics'),
+    (902, 'Sportswear'),
+    (902, 'Athletic Shoes'),
+    (903, 'Beverages'),
+    (903, 'Soft Drinks'),
+    (904, 'Gaming'),
+    (904, 'Entertainment'),
+    (905, 'Technology'),
+    (905, 'Wearable Devices');
+
+-- Inserting data into Displayed_IN table
+INSERT INTO Displayed_IN (Advertise_ID, Content_ID)
+VALUES
+    (901, 103), -- Samsung Galaxy S21 displayed in Lagaan
+    (902, 106), -- Nike Air Max displayed in 3 Idiots
+    (903, 107), -- Coca-Cola displayed in Taare Zameen Par
+    (904, 110), -- PlayStation 5 displayed in Andhadhun
+    (905, 126); -- Apple Watch Series 6 displayed in Shershaah
+
+
+INSERT INTO Related_Shows (Show_ID, Content_ID, Similarity) VALUES
+    (501, 103, 90),
+    (502, 104, 85),
+    (503, 105, 80),
+    (504, 106, 92),
+    (505, 107, 88),
+    (506, 108, 86),
+    (507, 109, 83),
+    (508, 110, 90),
+    (509, 111, 88),
+    (510, 112, 82),
+    (511, 113, 85),
+    (512, 114, 84),
+    (513, 115, 87),
+    (514, 116, 89),
+    (515, 117, 80),
+    (516, 118, 85),
+    (517, 119, 82),
+    (518, 120, 78),
+    (519, 121, 87),
+    (520, 122, 90),
+    (521, 123, 75),
+    (522, 124, 80),
+    (523, 125, 85),
+    (524, 126, 92),
+    (525, 127, 78),
+    (526, 128, 82),
+    (527, 129, 93),
+    (528, 130, 88),
+    (529, 131, 86),
+    (530, 132, 80),
+    (531, 133, 82),
+    (532, 134, 79),
+    (533, 135, 76),
+    (534, 136, 85),
+    (535, 137, 90),
+    (536, 138, 88),
+    (537, 139, 84),
+    (538, 140, 82),
+    (539, 141, 86),
+    (540, 142, 89);
+
+
