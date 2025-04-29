@@ -30,4 +30,4 @@ Database: MySQL / PostgreSQL)
 
 Schema Design: ER Diagrams & Normalized Tables
 
-Deployment Platform: GitHub 
+
